@@ -1,1 +1,4 @@
-# lista_de_tarefas
+# Tecnologias Usadas:
+💻 HTML
+💻 CSS
+💻 JS
