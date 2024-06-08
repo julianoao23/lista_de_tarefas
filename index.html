@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <title>Lista de Tarefas</title>
+  
+</head>
+
+<body>
+  
+  <!-- header -->
+	<header>
+	  <nav class="navbar navbar-light bg-white navbar-expand-md border-bottom mb-5">
+	    <a class="navbar-brand" href="#">
+	      <strong>Lista de Tarefas</strong>
+	    </a>
+	    <button type="button" class="navbar-toggler border-0">
+	      <span class="fa fa-search"></span>
+	    </button>
+	    <div class="collapse navbar-collapse">
+	      <form class="form-inline formNav">
+	        <input type="search" class="search form-control mr-2" placeholder="pesquisar tarefa..." onkeyup="pesquisarTarefas()">
+	        <button type="button" class="btn btn-outline-dark mr-3">
+	          <span class="fa fa-search"></span>
+	        </button>
+	      </form>
+	    </div>
+	  </nav>
+	</header>
+	<!-- /header -->
+	
+	<!-- main -->
+	<main style="margin-bottom: 80px;">
+	  
+	  <div class="container">
+	    <form class="form d-flex flex-row">
+	      <input type="text" class="input form-control mr-2" placeholder="Adicionar Tarefa">
+	      <button type="submit" class="btn btn-outline-dark">Adicionar</button>
+	    </form>
+	    
+	    <div class="listaDeTarefas">
+	      <!--As tarefas aperecerão aqui-->
+	    </div>
+	  </div>
+	  
+	  <div class="panel d-md-none d-none">
+	    <nav class="navbar navbar-light bg-white border-bottom">
+	      <a class="navbar-brand" href="#">
+	        <strong>Lista de Tarefas</strong>
+	      </a>
+	      <button type="button" class="navbar-toggler btn-close">
+	        <span class="fa fa-close"></span>
+	      </button>
+	    </nav>
+	    <div class="container mt-3">
+	      <input type="search" class="form-control searchMobile" placeholder="pesquisar tarefas..." onkeyup="pesquisaMobile()">
+	    </div>
+	  </div>
+	 
+	</main>
+	<!-- /main -->
+	
+	<!-- rodape -->
+	<footer class="bg-light p-3 text-center fixed-bottom border-top">
+	  <p class="font-italic mb-0">Desenvolvido por <a href="https://github.com/julianoao23">Juliano AO</a></p>
+	</footer>
+	<!-- /rodape -->
+	
+	<script src="js/index.js"></script>
+	<script src="js/mobile.js"></script>
+</body>
+
+</html>
